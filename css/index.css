@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    /* padding: 1rem 0; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li:first-child {
+    margin-right: 3rem; /* Ajusta esta distancia según tus necesidades */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li p {
+    display: inline-block;
+}
+
+main {
+    padding: 2rem;
+}
+
+.cursos {
+    text-align: center;
+}
+
+.cursos h1 {
+    margin-bottom: 1rem;
+}
+
+.carrusel {
+    position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: calc(100% - 20px); /* Resta el espacio para los botones */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px; /* Espacio interior para las imágenes */
+    box-sizing: border-box;
+    height: 300px;
+}
+
+.carrusel-items {
+    display: inline-flex;
+}
+
+.carrusel-items img {
+    width: 200px; /* Tamaño fijo para las imágenes */
+    height: 200px; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio entre las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 5px; /* Agrega bordes redondeados */
+}
+
+.curso {
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.curso:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del contenedor al 110% */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
